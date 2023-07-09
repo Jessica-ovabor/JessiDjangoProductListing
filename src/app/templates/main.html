@@ -1,1 +1,13 @@
-<!DOCTYPE html>
+<!--extends from base/base.html-->
+{% extends 'base/base.html' %}
+<!--body-->
+{% block 'body' %}
+<h1> Welcome bitch </h1>
+{% endblock %}
+<!--footer-->
+{% block 'footer'%}
+<footer class="mt-auto text-dark-50">
+  <p>Copyright © {% now 'Y' %} <a href="" class="text-white">Marketplace.</a> by <a href="https://django.com"
+          class="text-white">Preneure.com</a></p>
+</footer>
+{% endblock %}
