@@ -13,6 +13,9 @@
     text-shadow: none;
     /* Prevent inheritance from `body` */
 }
+/* background-color: rgba(8,152,231,.7);
+color: #fff;
+border-color: transparent; */
 
 
 /*
@@ -71,7 +74,7 @@ body.index {
 
 .nav-masthead .active {
     color: #fff;
-    border-bottom-color: #fff;
+    border-bottom-color: #ED1703;
 }
 
 #myVideo {
