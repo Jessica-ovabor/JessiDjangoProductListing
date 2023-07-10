@@ -9,8 +9,11 @@ https://docs.djangoproject.com/en/4.2/topics/settings/
 For the full list of settings and their values, see
 https://docs.djangoproject.com/en/4.2/ref/settings/
 """
-
+import os
 from pathlib import Path
+
+#Handles Error messages
+from django.contrib.messages import constants as messages
 
 # Build paths inside the project like this: BASE_DIR / 'subdir'.
 BASE_DIR = Path(__file__).resolve().parent.parent
@@ -104,8 +107,16 @@ AUTH_PASSWORD_VALIDATORS = [
         'NAME': 'django.contrib.auth.password_validation.NumericPasswordValidator',
     },
 ]
+# Handles redirection from home to login for unregister user
+LOGIN_REDIRECT_URL = '/home/'
+LOGIN_URL ='/login/'
 
 
+
+# Messages seting for Errors
+MESSAGE_TAGS={
+messages.ERROR: 'danger'
+}
 # Internationalization
 # https://docs.djangoproject.com/en/4.2/topics/i18n/
 
@@ -124,7 +135,7 @@ USE_TZ = True
 STATIC_URL = 'static/'
 
 #Media uploaded files
-import os
+
 MEDIA_ROOT = os.path.join(BASE_DIR, 'media')
 MEDIA_URL ="/media/"
 

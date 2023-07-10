@@ -2,8 +2,11 @@
 {% extends 'base/base.html' %}
 {% load static %}
 <!--body-->
+{% block 'title'%}
+<title>Market Place | Sell Your Goods with us.</title>
+{% endblock %}
 {% block 'body' %}
-<h1> Welcome bitch </h1>
+
 
 <div class="d-flex h-100 text-center text-white index">
   <!--video-->
@@ -14,7 +17,7 @@
     <div class="d-flex w-100 h-100 p-3 mx-auto flex-column main-content">
       <header class="mb-auto">
           <div>
-              <h3 class="float-md-start mb-0">MarketPlace</h3>
+              <h3 class="float-md-start mb-0">Market<span style="color:red">P</span>lace</h3>
               <!--nav-->
               <nav class="nav nav-masthead justify-content-center float-md-end">
                   {% if request.user.is_authenticated %}
@@ -33,12 +36,14 @@
                 <a href="{% url 'register' %}"
                     class="btn btn-lg btn-secondary fw-bold border-white bg-white">Register</a>
             </p>
+            
         </main>
         <footer class="mt-auto text-dark-50">
           <p>Copyright © {% now 'Y' %} <a href="" class="text-dark">Marketplace.</a> by <a href="https://django.com"
           class="text-dark">Marketplace.com</a></p>
         </footer>
-      <//www.pexels.com/div>
+      </div>
+      
       </div>
 {% endblock %}
 <!--footer-->
