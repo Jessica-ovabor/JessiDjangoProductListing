@@ -20,10 +20,13 @@ from django.urls import path,include
 from django.conf.urls.static import static
 #import url from the app
 from app import urls as main_app_url
+from users import urls as user_app_url
 
 urlpatterns = [
     path('admin/', admin.site.urls),
     path('',include(main_app_url)),
+    path('',include(user_app_url)),
+    
 ]
 # When image is clicked it makes it accessible
 #debugging purposes

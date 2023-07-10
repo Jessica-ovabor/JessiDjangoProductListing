@@ -10,7 +10,7 @@
     <link href="{% static 'css/bootstrap.min(1).css' %}" rel="stylesheet">
     <link href="{% static 'css/style.css'%}" rel="stylesheet">
     <!--favicon-->
-    <link rel="shortcut icon" type="image/png" href="../static/img/favicon.png"/>
+    <link rel="shortcut icon" type="image/png" href="{% static 'images/favicon.png' %}"/>
   </head>
   <body>
     {% block 'body' %}
@@ -30,7 +30,7 @@
       <div class="row">
           <div class="col-lg-3 col-sm-6">
               <div class="single-box">
-                  <img src ="../static/img/logo.png" alt="Logo"  width='60px'/>
+                  <img src ="{% static 'images/logo.png' %}" alt="Logo"  width='60px'/>
                      
               <p>Market Place is a <b> Online Market Store</b> and allows generation of <b> QR codes .</b> it offers a lot of features that will help you handle all your links at a go and match performance.</p>
         
