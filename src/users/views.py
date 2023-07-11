@@ -1,7 +1,8 @@
 from django.http import HttpResponse
 from django.shortcuts import render ,redirect
 from django.contrib.auth.forms import AuthenticationForm,UserCreationForm
-from django.contrib.auth import authenticate,login
+from django.contrib.auth import authenticate,login,logout
+from django.contrib.auth.decorators import login_required
 from django.contrib import messages
 from django.views import View
 
@@ -48,8 +49,11 @@ class RegisterView(View):
         else:
            messages.error(request, f"An error occured trying to register.")
            return render(request, 'register.html',{'register_form' :register_form})
-# Function to logout user
-
+# Function to logout 
+@login_required
+def logout_view(request):
+    logout(request)
+    return redirect("main")
             
         
         
