@@ -1,5 +1,5 @@
 
-PRODUCT_BRANDS = (
+PRODUCTS_BRANDS = (
     ('bmw', 'BMW'),
     ('mercedes benz', 'Mercedes Benz'),
     ('audi', 'Audi'),
@@ -36,7 +36,10 @@ PRODUCT_BRANDS = (
     ('thermacool', 'Thermacool'),
 )
 
-# TRANSMISSION_OPTIONS = (
-#     ('automatic', 'Automatic'),
-#     ('manual', 'Manual'),
-# )
+TRANSMISSION_OPTIONS = (
+    ('automatic', 'Automatic'),
+    ('manual', 'Manual'),
+    ('solar', 'Solar'),
+    ('electricity', 'Electricity'),
+    
+)
