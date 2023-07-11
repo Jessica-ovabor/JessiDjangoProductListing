@@ -8,4 +8,4 @@ class Listing(models.Model):
     created_at = models.DateTimeField(auto_now_add=True)
     updated_at = models.DateTimeField(auto_now=True)
     seller = models.ForeignKey(Profile, on_delete=models.CASCADE)
-    brands = models.CharField(max_length=24 , choices=, default=None)
+    brands = models.CharField(max_length=24 , choices=CAR, default=None)

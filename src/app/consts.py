@@ -1,5 +1,5 @@
 
-CARS_BRANDS = (
+PRODUCT_BRANDS = (
     ('bmw', 'BMW'),
     ('mercedes benz', 'Mercedes Benz'),
     ('audi', 'Audi'),
@@ -14,9 +14,7 @@ CARS_BRANDS = (
     ('honda', 'Honda'),
     ('toyota', 'Toyota'),
     ('chevrolet', 'Chevrolet'),
-    ('porsche', 'Porsche')
-)
-PHONE_BRANDS = (
+    ('porsche', 'Porsche'),
     ('redmi', 'Redmi'),
     ('samsung', 'Samsung'),
     ('itel', 'Itel'),
@@ -31,15 +29,13 @@ PHONE_BRANDS = (
     ('vivo', 'Vivo'),
     ('blackberry', 'BlackBerry'),
     ('nokia', 'Nokia'),
-    ('poco', 'Poco')
-)
-ELECTRONIC_BRANDS = (
+    ('poco', 'Poco'),
     ('lg', 'LG'),
     ('samsung', 'Samsung'),
     ('sonic', 'Sonic'),
     ('thermacool', 'Thermacool'),
-   
 )
+
 # TRANSMISSION_OPTIONS = (
 #     ('automatic', 'Automatic'),
 #     ('manual', 'Manual'),
