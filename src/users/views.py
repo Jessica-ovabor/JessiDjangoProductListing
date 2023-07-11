@@ -31,7 +31,7 @@ def login_view(request):
 #     register_form = UserCreationForm()
 #     return render(request, 'register.html',{'register_form' :register_form})
 
-#Class based view for register_view is used when you want to perform multiple http request
+#Class based view for register_view is used when you want to perform multiple http request to  perform
 
 class RegisterView(View):
     def get(self , request):
@@ -48,6 +48,8 @@ class RegisterView(View):
         else:
            messages.error(request, f"An error occured trying to register.")
            return render(request, 'register.html',{'register_form' :register_form})
+# Function to logout user
+
             
         
         
