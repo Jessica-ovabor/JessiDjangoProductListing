@@ -43,3 +43,14 @@ TRANSMISSION_OPTIONS = (
     ('electricity', 'Electricity'),
     
 )
+SELLER_TYPE = (
+    ('private party', 'Private Party'),
+    ('public party' , 'Public Party')
+    
+)
+BODY_TYPE =(
+    ('truck' , 'Truck'),
+    ('car' , 'Car'),
+    ('Phone' , 'Phone'),
+    ('electronics', 'Electronics')
+)

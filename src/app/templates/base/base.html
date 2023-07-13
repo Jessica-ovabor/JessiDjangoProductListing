@@ -36,11 +36,11 @@
                       aria-label="Bootstrap">
               </a>
               {% if request.user.is_authenticated %}
-               <ul class="nav col-12 col-lg-auto me-lg-auto mb-2 justify-content-center mb-md-0">
+               {% comment %} <ul class="nav col-12 col-lg-auto me-lg-auto mb-2 justify-content-center mb-md-0">
                   <li>
                       <a href="{% url 'profile' %}" class="nav-link px-2">Profile</a>
                   </li>
-              </ul>
+              </ul> {% endcomment %}
                <div class="text-end">
                   <a type="button" href="{% url 'logout' %}" class="btn btn-danger">Logout</a>
               </div> 
