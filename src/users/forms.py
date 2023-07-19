@@ -1,4 +1,4 @@
-from dtatclasses import field
+from dataclasses import field
 from django import forms 
 from localflavor.us.forms import  USZipCodeField
 from  .models import Location
