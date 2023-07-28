@@ -7,6 +7,6 @@ urlpatterns = [
     path('',main_view,name='app'),
     path('home/',home_view,name='home'),
     path('list/', list_view ,name='list'),
-    path('listing/<str:id>', list_view ,name='listing')
+    path('listing/<str:id>', listing_view ,name='listing')
     
 ]
