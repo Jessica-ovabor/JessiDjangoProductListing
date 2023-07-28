@@ -14,14 +14,14 @@
         </div>
         <br>
         <p class="card-text">{{listing.description}}</p>
-        {% comment %} <div class="d-flex justify-content-between align-items-center">
+        <div class="d-flex justify-content-between align-items-center">
             <div class="btn-group">
                 <a href="{% url 'listing' id=listing.id %}" type="button"
                     class="btn btn-sm btn-outline-secondary">View</a>
                 {% if listing.seller.user == request.user %}
                 <a href="{% url 'edit' id=listing.id %}" type="button" class="btn btn-sm btn-outline-secondary">Edit</a>
                 {% endif %}
-            </div> {% endcomment %}
+            </div>
             <small class="text-muted">{{listing.updated_at}}</small>
             <button id="like_{{listing.id}}" type="button" value="like" class="btn btn-secondary">
                 {% if listing.id in liked_listings_ids %}
@@ -43,8 +43,8 @@
         </div>t
     </div>
 </div>
-<!--like function-->
-{% comment %} <script>
+<!-- Like button -->
+<script>
     $("#like_{{listing.id}}").click(function () {
         $.ajax({
             type: "POST",
@@ -59,4 +59,4 @@
             }
         });
     })
-</script> {% endcomment %}
+</script>
