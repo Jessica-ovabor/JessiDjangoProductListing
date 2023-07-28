@@ -45,7 +45,7 @@ def list_view(request):
         listing_form = ListingForm()
         location_form =LocationForm()
     return render(request, 'list.html' ,{'listing_form':listing_form, 'location_form': location_form,}) 
-
+#listing view
 @login_required
 def listing_view(request,id):
     try:
@@ -57,4 +57,4 @@ def listing_view(request,id):
     except Exception as e:
         messages.error(request,f'Invalid UID{id} was provided check and try again')
         return redirect('home')
-    
+#
