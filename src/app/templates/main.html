@@ -31,25 +31,28 @@
       </header>
       
           
-        <main class="px-3">
-            <h2>Find a deal near you!</h2>
+        <main class="px-3 m-auto">
+            <h2 >Find a <span style="color:#ED1703">deal </span>near you!</h2>
             <p class="lead">Looking to buy or sell a used product? We've got you
                 covered. </br> MarketPlace is the leading online store for different product.</p>
             <p class="lead">
                 <a href="{% url 'register' %}"
-                    class="btn btn-lg btn-secondary fw-bold border-white bg-white a-link">Register</a>
+                    class="btn btn-lg btn-secondary fw-bold border-shadow-lg bg-danger">Register</a>
             </p>
           
         </main>
-       {% comment %} <footer class="mt-auto text-dark-50"> {% endcomment %}
-  {% comment %} <p>Copyright © {% now 'Y' %} <a href="" class="text-dark">Marketplace.</a> by <a href="https://django.com"
-  class="text-dark">Marketplace.com</a></p> {% endcomment %}
-</footer> 
-      </div>
-      
-      </div>
+    </div>
+</div>
+   
 {% endblock %}
 <!--footer-->
 {% block 'footer'%}
+<footer class="mt-auto text-center  text-white-50" style=
+"background: none";
+> 
+<p>Copyright © {% now 'Y' %} <a href="" class="text-white text-decoration-none">Marketplace.</a> by <a href="https://django.com"
+class=" text-white text-decoration-none">Marketplace.com</a></p>
+</footer> 
+
 
 {% endblock %}

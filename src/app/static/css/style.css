@@ -22,9 +22,11 @@ border-color: transparent; */
  * Base structure
  */
 
-html,
-body {
+
+* {
     height: 100%;
+    padding: 0;
+    box-sizing: border-box;
 }
 
 body {
@@ -127,6 +129,7 @@ footer{
     margin:0
     
 }
+
 .container{
     padding: 0;
     text-align: left;
@@ -158,7 +161,7 @@ footer{
 .single-box h3{
     font-size: 20px;
     font-weight: 100;
-    color: #f0b30f;
+    color: #ED1703;
 
 }
 .social{
