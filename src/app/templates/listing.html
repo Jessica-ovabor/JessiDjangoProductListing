@@ -85,7 +85,7 @@
     </div>
 </main>
 <script>
-    $("#sendEmail").click(function () {
+    {% comment %} $("#sendEmail").click(function () {
         $.ajax({
             type: "POST",
             url: "{% url 'inquire_listing' id=listing.id %}",
@@ -99,5 +99,5 @@
             }
         })
     });
-</script>
+</script> {% endcomment %}
 {% endblock %}
