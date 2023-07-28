@@ -47,5 +47,5 @@ def list_view(request):
     return render(request, 'list.html' ,{'listing_form':listing_form, 'location_form': location_form,}) 
 
 @login_required
-def listing_view(request):
+def listing_view(request,id):
     return render(request,'listing.html', {})

@@ -1,6 +1,6 @@
 #defining the app urls
 from django.urls import path
-from app.views import main_view ,home_view , list_view
+from app.views import main_view ,home_view , list_view,listing_view
 
 urlpatterns = [
     
