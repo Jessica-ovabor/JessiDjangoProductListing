@@ -56,8 +56,13 @@ def logout_view(request):
     logout(request)
     return redirect("main")
 
-
-            
+#profile view using class based view
+class ProfileView(View):
+    def get(self , request):
+        return render(request, 'profile.html')
+    def post(self , request):
+        pass
+         
         
         
     
