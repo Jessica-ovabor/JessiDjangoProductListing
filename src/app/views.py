@@ -7,9 +7,10 @@ from users.forms import  LocationForm
 from .forms import ListingForm
 from .filters import ListingFilter
 # Create your views here.
-
+#pre login view
 def main_view(request):
     return render(request,'main.html')
+#after login view
 @login_required
 def home_view(request):
     listings =Listing.objects.all()
@@ -20,6 +21,7 @@ def home_view(request):
         
     }
     return render(request,'home.html', context)
+#add lising view
 @login_required
 def list_view(request):
     if request.method == 'POST':
@@ -44,3 +46,6 @@ def list_view(request):
         location_form =LocationForm()
     return render(request, 'list.html' ,{'listing_form':listing_form, 'location_form': location_form,}) 
 
+@login_required
+def listing_view(request):
+    return render(request,'listing.html', {})
