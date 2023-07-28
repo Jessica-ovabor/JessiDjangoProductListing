@@ -44,7 +44,7 @@
     </div>
 </div>
 <!-- Like button -->
-<script>
+{% comment %} <script>
     $("#like_{{listing.id}}").click(function () {
         $.ajax({
             type: "POST",
@@ -59,4 +59,4 @@
             }
         });
     })
-</script>
+</script> {% endcomment %}

@@ -36,11 +36,11 @@
                       aria-label="Bootstrap">
               </a>
               {% if request.user.is_authenticated %}
-               {% comment %} <ul class="nav col-12 col-lg-auto me-lg-auto mb-2 justify-content-center mb-md-0">
+               <ul class="nav col-12 col-lg-auto me-lg-auto mb-2 justify-content-center mb-md-0">
                   <li>
-                      <a href="{% url 'profile' %}" class="nav-link px-2">Profile</a>
+                      <a href="" class="nav-link px-2">Profile</a>
                   </li>
-              </ul> {% endcomment %}
+              </ul> 
                <div class="text-end">
                   <a type="button" href="{% url 'logout' %}" class="btn btn-danger">Logout</a>
               </div> 
@@ -67,7 +67,7 @@
               <div class="single-box">
                   <img src ="{% static 'images/logo.png' %}" alt="Logo"  width='60px'/>
                      
-              <p>Market Place is a <b> Online Market Store</b> that allows you to sell <b> used products electronically .</b> it offers a lot of features that will help you handle all your transactions at a go and leave you satisfied.</p>
+              <p>MarketPlace is a <b> Online Market Store</b> that allows you to sell <b> used products electronically .</b> it offers a lot of features that will help you handle all your transactions at a go and leave you satisfied.</p>
         
                
       </div>
@@ -101,7 +101,7 @@
       </div>
       <div class="col-lg-3 col-sm-6">
           <div class="single-box">
-              <h3>Market Place</h3>
+              <h3>Quick Links</h3>
               <hr class="mb-1">
               <ul>
                   <li><a href="#">Status</a></li>
