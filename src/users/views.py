@@ -55,7 +55,7 @@ class RegisterView(View):
 @login_required
 def logout_view(request):
     logout(request)
-    return redirect("main")
+    return redirect('/')
 
 #profile view using class based view
 @method_decorator(login_required, name='dispatch')
