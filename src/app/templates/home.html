@@ -16,6 +16,7 @@
                     made it that much easier.</p>
                 <a href="{% url 'list' %}" class="btn btn-primary my-2">List Your Products</a>
             </div>
+            <!--search form for listings-->
             <div class="col-lg-6 col-md-8 mx-auto">
                 <form method="get">
                     {{ listing_filter.form|crispy }}
