@@ -15,7 +15,7 @@ def home_view(request):
     listings =Listing.objects.all()
     listing_filter = ListingFilter(request.GET, queryset=listings)
     context = {
-        'listings':listings,
+        
         'listing_filter':listing_filter,
         
     }
