@@ -3,6 +3,7 @@ from django.shortcuts import render ,redirect
 from django.contrib.auth.forms import AuthenticationForm,UserCreationForm
 from django.contrib.auth import authenticate,login,logout
 from django.contrib.auth.decorators import login_required
+from django.utils.decorators import method_decorator    
 from django.contrib import messages
 
 from django.views import View
@@ -57,9 +58,10 @@ def logout_view(request):
     return redirect("main")
 
 #profile view using class based view
+@method_decorator(login_required, name='dispatch')
 class ProfileView(View):
     def get(self , request):
-        return render(request, 'profile.html')
+        return render(request, 'profile.html' ,{})
     def post(self , request):
         pass
          
